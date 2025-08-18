@@ -33,9 +33,21 @@ const server = http.createServer( (req,res)=>{
             res.statusCode= 200;
             break;
 
+        //redirect page with contact-us
+        case '/contact-us':
+            res.statusCode= 301;
+            res.setHeader('location','/contact')
+            break;
+
         case '/about':
             filename='about.html'
             res.statusCode= 200;
+            break;
+
+        //redirect page with about-us
+        case '/about-us':
+            res.statusCode= 301;
+            res.setHeader('location','/about')
             break;
         
         default:
