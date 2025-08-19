@@ -7,11 +7,9 @@
   </head>
 
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
-    </nav>
+    <!-- this navbar is come from components -->
+     <!-- beware of using - except = (= is not allow to render html or other code) -->
+    <%- include('./components/navbar.ejs') %>
 
     <% if(blogs.length){ %> <% blogs.forEach(blog=> { %>
     <h1><%= blog.title %></h1>
