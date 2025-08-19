@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "loadash": "^1.0.0"
+  },
+  "name": "node_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saimoonsengoo/Node-Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Saimoonsengoo/Node-Test/issues"
+  },
+  "homepage": "https://github.com/Saimoonsengoo/Node-Test#readme"
+}
