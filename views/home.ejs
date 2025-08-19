@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+<%- include('./components/head.ejs') %>
 
-  <body>
-    <!-- this navbar is come from components -->
-     <!-- beware of using - except = (= is not allow to render html or other code) -->
-    <%- include('./components/navbar.ejs') %>
+    <body>
+        <!-- this navbar is come from components -->
+        <!-- beware of using - except = (= is not allow to render html or other code) -->
+        <%- include('./components/navbar.ejs') %>
 
-    <% if(blogs.length){ %> <% blogs.forEach(blog=> { %>
-    <h1><%= blog.title %></h1>
-    <p><%= blog.into %></p>
-    <% }); %> <%} %>
-  </body>
+            <div class="container">
+                <% if(blogs.length){ %>
+                    <% blogs.forEach(blog=> { %>
+                        <div class="card">
+                            <h1>
+                                <%= blog.title %>
+                            </h1>
+                            <p>
+                                <%= blog.into %>
+                            </p>
+                        </div>
+
+                        <% }); %>
+                            <%} %>
+            </div>
+    </body>
+
 </html>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <%- include('./components/navbar.ejs') %>
-    <h1>404 Page</h1>
-    <p>Server Not Found!</p>
-</body>
+<%- include('./components/head.ejs') %>
+
+    <body>
+        <%- include('./components/navbar.ejs') %>
+            <div class="container">
+                <h1>404 Page</h1>
+                <p>Server Not Found!</p>
+            </div>
+    </body>
+
 </html>
